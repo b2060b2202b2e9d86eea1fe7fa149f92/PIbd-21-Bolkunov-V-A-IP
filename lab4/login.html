@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Тупо форум</title>
+  <link href="https://fonts.googleapis.com/css2?family=Monda&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div align="center">
+    <img src="logoTround.png" vspace="50" width="150" height="150" usemap="#logoMap"/>
+    <map name="logoMap">
+      <area shape="circle" coords="75, 75, 75" href="index.html">
+    </map>
+    <h1>Вход</h1>
+    <form>
+      <table width="50%" cellspacing="0" cellpadding="0">     
+        <tr>  
+          <td>
+            <label for="email">Эмэел адрес:</label>
+            <input allign="left" class="register" type="text" name="email"> 
+            <label for="password">Пароль:</label>
+            <input allign="left" class="register" type="password" name="password">        
+            <a allign="left" class="login" onclick="window.location.href='forum.html'">Войти</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>

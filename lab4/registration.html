@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Тупо форум</title>
+ 	<link href="https://fonts.googleapis.com/css2?family=Monda&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div align="center">
+		<img src="logoTround.png" vspace="50" width="150" height="150" usemap="#logoMap"/>
+		<map name="logoMap">
+			<area shape="circle" coords="75, 75, 75" href="index.html">
+		</map>
+		<h1>Регистрацыя</h1>
+		<form>
+			<table width="50%" cellspacing="0" cellpadding="0">			
+				<tr>	
+					<td>
+						<label for="email">Эмэел адрес:</label>
+						<div class="small-grey-text">
+							<input allign="left" class="register" type="text" name="email">	
+							Мы передадим всю информацию которую собираем о вас полиции по их первому-же запросу, не переживайте.
+						</div>
+
+						<label for="username">Псевдоним:</label>
+						<input allign="left" class="register" type="text" name="username">	
+
+						<label for="password">Пароль:</label>
+						<input allign="left" class="register" type="password" name="password">
+
+						<label for="age">Выберите, что вам уже 18:</label>
+						<input class="register" type="number" value="18" min="1" max="99" name="age"/>
+
+						<label for="photo">Фоточка:</label>
+						<div class="small-grey-text">						
+							<input class="register" type="file" name="photo"/>
+							Рекомендуем вам использовать в качестве аватарки фото банковской карты ваших родителей с двух сторон.
+						</div>						
+						<a allign="right" onclick="window.location.href='forum.html'" class="register">Зарегистрироваться</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
