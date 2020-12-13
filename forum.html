@@ -4,12 +4,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Тупо форум</title>
+	<!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/css/bootstrap.min.css' type='text/css' media='all'>
+
  	<link href="https://fonts.googleapis.com/css2?family=Monda&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="sweetalert2.css">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="sweetalert2.min.css">
 	<link rel="icon" type="image/png" href="logoTround.png" />
 </head>
 
 <body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="js\sweetalert2.all.min.js"></script>
+ 	<script src="js\jquery-3.5.1.min.js"></script>
+ 	<script src="js\site.js"></script>
+  	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+  	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	 <div class="general">
 	<table width="100%" border="0" cellpadding="0" cellspacing="0px" margin="0px" padding="0px">
 		<tr>
 			<td width="200px" align="">
@@ -57,10 +70,14 @@
 		<a class="forum-answer">Ответик2</a>
 		</div>
 
-		<div class="forum-answer-row" width="100%" align="right">
-			<input class="forum-answer-input"type="text" name="answer"/>
-			<a class="answer">Отправить</a>
-		</div>
+		<form name="answer-form">
+			<div class="forum-answer-row" width="100%" align="right">
+				<input class="forum-answer-input" type="text" name="answer" id="answer"/>
+				<input type="hidden" name="username" id="username" value="User"/>
+				<input type="hidden" name="question" id="question" value="Question1"/>
+				<input class="answer" type="submit" name="submit" id="submit" value="Отправить"/>
+			</div>
+		</form>
 	</div> 
 	<br>
 	<div class="forum">
@@ -82,10 +99,14 @@
 		<a class="forum-answer">Ответик2</a>
 		</div>
 
-		<div class="forum-answer-row" width="100%" align="right">
-			<input class="forum-answer-input"type="text" name="answer"/>
-			<a class="answer">Отправить</a>
-		</div>
+		<form name="answer-form">
+			<div class="forum-answer-row" width="100%" align="right">
+				<input class="forum-answer-input" type="text" name="answer" id="answer"/>
+				<input type="hidden" name="username" id="username" value="User"/>
+				<input type="hidden" name="question" id="question" value="Question2"/>
+				<input class="answer" type="submit" name="submit" id="submit" value="Отправить"/>
+			</div>
+		</form>
 	</div> 
 	<br>
 	<div class="forum">
@@ -107,11 +128,16 @@
 		<a class="forum-answer">Ответик2</a>
 		</div>
 
-		<div class="forum-answer-row" width="100%" align="right">
-			<input class="forum-answer-input"type="text" name="answer"/>
-			<a class="answer">Отправить</a>
-		</div>
+		<form name="answer-form">
+			<div class="forum-answer-row" width="100%" align="right">
+				<input class="forum-answer-input" type="text" name="answer" id="answer"/>
+				<input type="hidden" name="username" id="username" value="User"/>
+				<input type="hidden" name="question" id="question" value="Question3"/>
+				<input class="answer" type="submit" name="submit" id="submit" value="Отправить"/>
+			</div>
+		</form>
 	</div> 
+</div>
 </body>
 
 </html>
